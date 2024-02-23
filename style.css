@@ -35,6 +35,10 @@ h1 i {
     font-style: normal;
 }
 
+#efect:hover #hoveer3 #hoveer2 {
+  color: white;
+}
+
 .page-hero:before {
     content: '';
     position: absolute;
