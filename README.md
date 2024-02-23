@@ -3,4 +3,4 @@
 <h1>Hi, this is my web application </h1>
 website development focused on helping people with anxiety
 
-deploy:https://omathdev.github.io/No-ANXIETY/
+deploy: https://omathdev.github.io/No-ANXIETY/
