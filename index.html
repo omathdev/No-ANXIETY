@@ -14,36 +14,38 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   
   </head>
 
 <body class="antialiased">
 
-<div class="fixed -left-24 -z-10 w-[1000px]  sm:w-[1000px] lg:w-[1920px] page-hero ">
-  <video  autoplay muted loop>
-    <source  src="image/mylivewallpapers-com-Van-Life-4K.mp4" type="video/mp4">
+<div class="fixed -left-24 -z-10 w-[1000px]  sm:w-[1100px] lg:w-[2020px] page-hero ">
+  <video id="imagem" autoplay muted loop>
+    <source  src="image/imagem1.mp4" onError="this.onerror=null;this.src='image/alt.png';" type="video/mp4">
 </video>
 </div>
-
 <!-- NAV BAR SITE -->
 <div class="w-full h-10 bg-slate-300 flex items-center sm:justify-around ">
   <h1 class="logo ml-2">  <i>NO </i>ANXIETY</h1>
- <i></i> <a class="ml-7 logo hover:animate-bounce" href="#">  <i>Dicas </i> </a>
-  <a class="ml-7 logo hover:animate-bounce" href="#">Ajuda</a>
-  <a  class="ml-7 logo hover:animate-bounce" href="#">Videos</a>
+ <i></i> <a class="ml-7 logo hover:text-[#ff007f] " href="#">  <i>Dicas </i> </a>
+  <a  class="ml-7 logo hover:text-[#ff007f]" href="#">Ajuda</a>
+  <a  class="ml-7 logo hover:text-[#ff007f]" href="#">Videos</a>
 </div>
 <!-- FIM NAV BAR SITE -->
 
 <!-- Instrução site -->
-<div class="flex items-center justify-center mt-10 ">
- <p class=" text-center logo underline inline font-bold w-64 h-28 hover:w-72 hover:w-32 hover:animate-bounce bg-white bg-opacity-30 p-7 drop-shadow-md pp">
-  Esta se sentindo Ansioso? <br> Siga os Passos Abaixo
+<div class="flex items-center justify-center mt-20 ">
+ <p class="  text-center logo underline inline font-bold sm:w-80 sm:h-32 lg:h-28 lg:w-96 sm:text-lg  md:w-96 cursor-default w-64 h-28 hover:w-72 hover:w-32 transition-all bg-white bg-opacity-30 p-7 drop-shadow-md ">
+  Esta se sentindo <i class="pp"> Ansioso? </i> <br> Siga os Passos Abaixo
  </p>
 </div>
+<!-- Fim Instrução site -->
 
-<div class="container ">
-  <nav>
+<!-- PASSOS -->
+<div> 
+  <nav class="bg-black lg:w-80 mt-10">
    <input id="toggle" type="checkbox" checked>
   <h2>XÔ ANSIEDADE </h2>
 <ul>
@@ -52,14 +54,25 @@
   <li><a href="#chapter3">Chapter 03</a></li>
   <li><a href="#chapter4">Chapter 04</a></li>
 </ul>
-</nav>
+</div>
+<!-- FIM PASSOS -->
 
-
- 
-
-
+<!-- Button Mudar backgound -->
+<div class="inline-block animate-bounce hover:ease-in-out"> 
+<div class="w-12 h-12 p-3 md:w-16 md:h-16 border-2 border-x-blue-400 relative hover:animate-spin ease-in-out rounded-full  -z-1 mt-4 ml-6"> 
+<ion-icon onclick="alterarImagem()"  class=" rounded-full w-3 h-3 p-3 md:w-7 md:h-7 bg-white z-10 -mt-2 -ml-2 fixed cursor-pointer" name="brush-outline"></ion-icon>
+</div>
+<!-- Fim Button Mudar backgound -->
+<script>
+  function alterarImagem() {
+    var video = document.getElementById("imagem");
+        var novoVideoSrc = video.src.endsWith("image/imagem2.mp4") ? "image/imagem1.mp4" : "image/imagem2.mp4";
+         // Pausa o vídeo antes de alterar a origem
+        video.src = novoVideoSrc;
+        video.load(); // Recarrega o vídeo para que a alteração entre em vigor
+        video.play(); // Inicia o vídeo automaticamente após a troca
+  }
+</script>
 </body>
-
-
 
 </html>
