@@ -35,7 +35,11 @@ h1 i {
     font-style: normal;
 }
 
-#efect:hover #hoveer3 #hoveer2 {
+#efect:hover  #efect2 , #efect:hover #efect3 {
+  color: white;
+}
+
+#efect11:hover #efect22, #efect11:hover #efect33 {
   color: white;
 }
 
@@ -61,7 +65,7 @@ nav {
     font-size: 1.5rem;
     border-radius: 2px;
     position: relative;
-    background: tomato;
+    background: #ff007f;
     height: 40px;
     text-transform: uppercase;
     margin-bottom: 0;
