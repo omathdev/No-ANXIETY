@@ -86,12 +86,12 @@
 
 
 <div class=""> 
-<h2  class="text-center mt-20 ml-5 border-white bg-white opacity-60 rounded-md  p-2 border inline-block"> <i > Passo 1:</i> Respiração </h2> <ion-icon onclick="AparecerTexto()"  class="mt-4 inline-block animate-pulse border border-white p-1 rounded-full bg-white" name="arrow-down-outline"></ion-icon>
-<p id="Text" class="font-semibold ml-5 mt-1 text-left text-sm ">A respiração profunda ajuda a reduzir a ansiedade ao ativar o sistema nervoso parassimpático, promovendo relaxamento e diminuindo os níveis de cortisol, o hormônio do estresse.</p>
+<h2  class="text-center mt-20 ml-36 border-white bg-white opacity-60 rounded-md  border w-32 h-14"> <i > Passo 1:</i> Respiração </h2> <ion-icon onclick="AparecerTexto()"  class="mt-4 ml-48  animate-pulse border border-white p-1 rounded-full bg-white" name="arrow-down-outline"></ion-icon>
+<p id="Text" class="font-semibold ml-5 mt-1 text-center text-sm ">A respiração profunda ajuda a reduzir a ansiedade ao ativar o sistema nervoso parassimpático, promovendo relaxamento e diminuindo os níveis de cortisol, o hormônio do estresse.</p>
 </div>
-<iframe id="passo1" class=" border border-white rounded-md w-80 h-60 m-6 " src="https://www.youtube.com/embed/zKgDSnD6vVw?si=ixz61idjqdln0iu0" title="YouTube video player" frameborder="0" 
+<iframe id="passo1" class=" border border-white rounded-md w-80 h-60 m-6 ml-12 " src="https://www.youtube.com/embed/zKgDSnD6vVw?si=ixz61idjqdln0iu0" title="YouTube video player" frameborder="0" 
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<cite class="m-6 -mt-2">Creditos: Felipe Marx <a class="bg-blue-600" href="https://www.youtube.com/@FelipeMarxsb">Youtube</a> </cite>
+<cite class="m-6 -mt-2 ml-28">Creditos: Felipe Marx <a class="bg-blue-600" href="https://www.youtube.com/@FelipeMarxsb">Youtube</a> </cite>
 <div id="passo1" class=" w-1 h-1 mt-56"/>
 
 
@@ -113,9 +113,12 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
       document.getElementById("Text").style.display = 'none'
     }  ;
     
-    
-  
   }
+
+ var Nome = localStorage.nomeUsuario = ('Renata')
+  localStorage.displayDef = 'block'
+
+  document.write(Nome)
 </script>
 </body>
 
