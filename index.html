@@ -49,7 +49,7 @@
    <input id="toggle" type="checkbox" checked>
   <h2 class="stylefont"> <i class="pp mr-2"> no </i> anxiety </h2>
 <ul>
-  <li><a href="#chapter1">Passo 1</a></li>
+  <li><a href="#passo1">Passo 1</a></li>
   <li><a href="#chapter2">Passo 2</a></li>
   <li><a href="#chapter3">Passo 3</a></li>
   <li><a href="#chapter4">Passo 4</a></li>
@@ -64,6 +64,7 @@
 </div>
 <!-- Fim Button Mudar backgound -->
 
+<!--Cards -->
 <div class=" z-30 cursor-default  flex mt-28 items-center justify-between lg:justify-evenly w-full h-48  sm:h-80">
   <div id="efect" class="hover:mb-4  border rounded-md bg-transparent hover:bg-blue-600 transition-all ease-linear  border-blue-600 w-32 sm:w-64 h-40 ml-3  ">
     <ion-icon  class="ml-14 mt-1 "  name="heart-circle-outline"></ion-icon>
@@ -81,7 +82,17 @@
     <p class="text-sm text-center text-black">Faca a sua Historia</p>
   </div>
 </div>
+<!-- Fim Cards -->
 
+
+<div class=""> 
+<h2  class="text-center mt-20 ml-5 border-white bg-white opacity-60 rounded-md  p-2 border inline-block"> <i > Passo 1:</i> Respiração </h2> <ion-icon onclick="AparecerTexto()"  class="mt-4 inline-block animate-pulse border border-white p-1 rounded-full bg-white" name="arrow-down-outline"></ion-icon>
+<p id="Text" class="font-semibold ml-5 mt-1 text-left text-sm ">A respiração profunda ajuda a reduzir a ansiedade ao ativar o sistema nervoso parassimpático, promovendo relaxamento e diminuindo os níveis de cortisol, o hormônio do estresse.</p>
+</div>
+<iframe id="passo1" class=" border border-white rounded-md w-80 h-60 m-6 " src="https://www.youtube.com/embed/zKgDSnD6vVw?si=ixz61idjqdln0iu0" title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<cite class="m-6 -mt-2">Creditos: Felipe Marx <a class="bg-blue-600" href="https://www.youtube.com/@FelipeMarxsb">Youtube</a> </cite>
+<div id="passo1" class=" w-1 h-1 mt-56"/>
 
 
 <script>
@@ -92,6 +103,18 @@
         video.src = novoVideoSrc;
         video.load(); // Recarrega o vídeo para que a alteração entre em vigor
         video.play(); // Inicia o vídeo automaticamente após a troca
+  }
+
+  function AparecerTexto() {
+        
+    if ( document.getElementById("Text").style.display == 'none') {
+      document.getElementById("Text").style.display = 'block'
+    } else {
+      document.getElementById("Text").style.display = 'none'
+    }  ;
+    
+    
+  
   }
 </script>
 </body>
