@@ -20,6 +20,15 @@
   /* 2 */
 }
 
+function alterarImagem() {
+  var imagem = document.getElementById("imagem");
+  if (imagem.src.endsWith("image/lofi1.png")) {
+      imagem.src = "image/lofi2.png";
+  } else {
+      imagem.src = "image/lofi1.png";
+  }
+}
+
 ::before,
 ::after {
   --tw-content: '';

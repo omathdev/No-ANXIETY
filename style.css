@@ -173,6 +173,9 @@ nav {
     text-decoration: none;
   }
   
+  .sh {
+    text-shadow: white 2px 2px 2px;
+  }
   
   .container {
     max-width: 55ch;

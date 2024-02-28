@@ -16,15 +16,15 @@
    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
   </head>
 
 <body class="antialiased bg-white">
 
 <div class="  fixed -left-24 -z-10 w-[1000px] border-b-white sm:w-[1100px] lg:w-[2050px] page-hero ">
-  <video id="imagem" autoplay muted loop>
-    <source  src="image/imagem1.mp4" onError="this.onerror=null;this.src='image/alt.png';" type="video/mp4">
-</video>
+  <img id="imagem" src="image/lofi1.png" alt="" srcset="">
 </div>
 <!-- NAV BAR SITE -->
 <div class="w-full h-10 bg-slate-300 flex items-center sm:justify-around ">
@@ -65,7 +65,7 @@
 <!-- Fim Button Mudar backgound -->
 
 <!--Cards -->
-<div class=" z-30 cursor-default  flex mt-32 items-center justify-between lg:justify-evenly w-full h-48  sm:h-80">
+<div  data-aos="fade-right" class=" z-30 cursor-default  flex mt-32 items-center justify-between lg:justify-evenly w-full h-48  sm:h-80">
   <div id="efect" class="hover:mb-4  border rounded-md bg-transparent hover:bg-blue-600 transition-all ease-linear  border-blue-600 w-32 sm:w-64 h-40 ml-3  ">
     <ion-icon  class="ml-14 mt-1 "  name="heart-circle-outline"></ion-icon>
     <h1 id="efect2" class=" mt-0 sm:mt-5 inline-block m-5 text-blue-600"  >Viva o agora</h1>
@@ -85,25 +85,26 @@
 <!-- Fim Cards -->
 
 
-<div class=""> 
-<h2  class="text-center mt-20 ml-36 border-white bg-white opacity-60 rounded-md  border w-32 h-14"> <i > Passo 1:</i> Respiração </h2> <ion-icon onclick="AparecerTexto()"  class="mt-4 ml-48  animate-pulse border border-white p-1 rounded-full bg-white" name="arrow-down-outline"></ion-icon>
-<p id="Text" class="font-semibold ml-5 mt-1 text-center text-sm ">A respiração profunda ajuda a reduzir a ansiedade ao ativar o sistema nervoso parassimpático, promovendo relaxamento e diminuindo os níveis de cortisol, o hormônio do estresse.</p>
-</div>
-<iframe id="passo1" class=" border border-white rounded-md w-80 h-60 m-6 ml-12 " src="https://www.youtube.com/embed/zKgDSnD6vVw?si=ixz61idjqdln0iu0" title="YouTube video player" frameborder="0" 
+
+<h3 data-aos="fade-left" class="text-center mt-64 ml-36 border-blue-600 bg-white opacity-20 rounded-md  border w-32 h-14">  Passo 1: Respiração </h3> <ion-icon data-aos="fade-down" onclick="AparecerTexto()"  class="mt-4 ml-48  animate-pulse border border-white p-1 rounded-full bg-white" name="arrow-down-outline"></ion-icon>
+<p id="Text" class="font-semibold ml-5 mt-1 text-center text-sm p-1">A respiração profunda ajuda a reduzir a ansiedade ao ativar o sistema nervoso parassimpático, promovendo relaxamento e diminuindo os níveis de cortisol, o hormônio do estresse.</p>
+
+<iframe data-aos="fade-left" id="passo1" class=" border bg-opacity-55 border-white rounded-md w-80 h-60 m-6 ml-12 " src="https://www.youtube.com/embed/zKgDSnD6vVw?si=ixz61idjqdln0iu0" title="YouTube video player" frameborder="0" 
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<cite class="m-6 -mt-2 ml-28">Creditos: Felipe Marx <a class="bg-blue-600" href="https://www.youtube.com/@FelipeMarxsb">Youtube</a> </cite>
+<cite data-aos="fade-left" class="m-6 -mt-2 ml-28">Creditos: Felipe Marx <a class="bg-blue-600" href="https://www.youtube.com/@FelipeMarxsb">Youtube</a> </cite>
 <div id="passo1" class=" w-1 h-1 mt-56"/>
 
 
 <script>
-  function alterarImagem() {
-    var video = document.getElementById("imagem");
-        var novoVideoSrc = video.src.endsWith("image/imagem2.mp4") ? "image/imagem1.mp4" : "image/imagem2.mp4";
-         // Pausa o vídeo antes de alterar a origem
-        video.src = novoVideoSrc;
-        video.load(); // Recarrega o vídeo para que a alteração entre em vigor
-        video.play(); // Inicia o vídeo automaticamente após a troca
+  AOS.init();
+function alterarImagem() {
+  var imagem = document.getElementById("imagem");
+  if (imagem.src.endsWith("image/lofi1.png")) {
+      imagem.src = "image/lofi2.png";
+  } else {
+      imagem.src = "image/lofi1.png";
   }
+}
 
   function AparecerTexto() {
         
@@ -115,10 +116,7 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
     
   }
 
- var Nome = localStorage.nomeUsuario = ('Renata')
-  localStorage.displayDef = 'block'
 
-  document.write(Nome)
 </script>
 </body>
 
