@@ -13,6 +13,8 @@ stylefont {
     
 }
 
+body { overflow-x: hidden; }
+
 h1 i {
  color: #ff007f;   
 }
