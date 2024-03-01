@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
   
   </head>
 
-<body class="antialiased bg-white">
+<body class="antialiased bg-white overflow-x-hidden">
 
 <div class="  fixed -left-24 -z-10 w-[1000px] border-b-white sm:w-[1100px] lg:w-[2050px] page-hero ">
   <img id="imagem" src="image/lofi1.png" alt="" srcset="">
@@ -37,7 +37,7 @@
 
 <!-- Instrução site -->
 <div class="flex items-center justify-center mt-20 ">
- <p class="  text-center logo underline inline font-bold sm:w-80 sm:h-32 lg:h-28 lg:w-96 sm:text-lg  md:w-96 cursor-default w-64 h-28 hover:w-72 hover:w-32 transition-all bg-white bg-opacity-30 p-7 drop-shadow-md ">
+ <p class="  text-center logo underline inline font-bold sm:w-80 sm:h-32 lg:h-28 lg:w-96 sm:text-lg  md:w-96 cursor-default w-64 h-28 hover:w-72  transition-all bg-white bg-opacity-30 p-7 drop-shadow-md ">
   Esta se sentindo <i class="pp"> Ansioso? </i> <br> Siga os Passos Abaixo
  </p>
 </div>
@@ -72,7 +72,7 @@
     <p  id="efect3" class=" text-sm px-3 text-center text-black">Aqui você consegue colocar sua mente no lugar</p>
 
   </div>
-  <div id="efect11" class="hover:mb-4 border rounded-md bg-transparent border-[#ff007f] hover:bg-[#ff007f] transition-all ease-linear w-24 sm:w-44 h-32">
+  <div id="efect11" class="hover:mb-4 border rounded-md bg-transparent  border-[#ff007f] hover:bg-[#ff007f] transition-all ease-linear w-24 sm:w-44 h-32">
     <ion-icon class="ml-10 sm:ml-20" name="happy-outline"></ion-icon>
     <h1 id="efect22" class="text-center text-[#ff007f]">Sorria!</h1>
     <p id="efect33" class="text-sm text-center text-black">Um simples gesto muda tudo</p>
@@ -84,16 +84,27 @@
 </div>
 <!-- Fim Cards -->
 
-
-
-<h3 data-aos="fade-left" class="text-center mt-64 ml-36 border-blue-600 bg-white opacity-20 rounded-md  border w-32 h-14">  Passo 1: Respiração </h3> <ion-icon data-aos="fade-down" onclick="AparecerTexto()"  class="mt-4 ml-48  animate-pulse border border-white p-1 rounded-full bg-white" name="arrow-down-outline"></ion-icon>
+<!-- Inicio Passo 1 -->
+<div class="h-[800px] lg:h-[600px]  flex flex-col items-center justify-center ">
+<h3 data-aos="fade-down" class="text-center sm:mt-64 lg:mt-0 border-blue-600 bg-white opacity-20 rounded-md  border w-32 h-14">  Passo 1: Respiração </h3> <ion-icon data-aos="fade-down" onclick="AparecerTexto()"  class=" mt-3 animate-pulse border border-white p-1 rounded-full bg-white" name="arrow-down-outline"></ion-icon>
 <p id="Text" class="font-semibold ml-5 mt-1 text-center text-sm p-1">A respiração profunda ajuda a reduzir a ansiedade ao ativar o sistema nervoso parassimpático, promovendo relaxamento e diminuindo os níveis de cortisol, o hormônio do estresse.</p>
 
-<iframe data-aos="fade-left" id="passo1" class=" border bg-opacity-55 border-white rounded-md w-80 h-60 m-6 ml-12 " src="https://www.youtube.com/embed/zKgDSnD6vVw?si=ixz61idjqdln0iu0" title="YouTube video player" frameborder="0" 
+<iframe data-aos="fade-down" id="passo1" class=" border bg-opacity-55  border-white rounded-md w-80 h-60 m-6  " src="https://www.youtube.com/embed/zKgDSnD6vVw?si=ixz61idjqdln0iu0" title="YouTube video player" frameborder="0" 
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<cite data-aos="fade-left" class="m-6 -mt-2 ml-28">Creditos: Felipe Marx <a class="bg-blue-600" href="https://www.youtube.com/@FelipeMarxsb">Youtube</a> </cite>
-<div id="passo1" class=" w-1 h-1 mt-56"/>
+<cite data-aos="fade-left" class="">Creditos: Felipe Marx <a class="bg-blue-600" href="https://www.youtube.com/@FelipeMarxsb">Youtube</a> </cite>
 
+</div>
+<!-- Inicio Passo 1 -->
+<!-- Inicio Passo 2 -->
+<div class="h-[800px] lg:h-[600px] flex flex-col items-center justify-center ">
+  <h3 data-aos="fade-left" class="text-center sm:mt-64 lg:mt-0 border-blue-600 bg-white opacity-20 rounded-md  border w-32 h-14">  Passo 2: <br> Musica </h3> <ion-icon data-aos="fade-down" onclick="AparecerTexto()"  class=" mt-3 animate-pulse border border-white p-1 rounded-full bg-white" name="arrow-down-outline"></ion-icon>
+  <p id="Text" class="font-semibold ml-5 mt-1 text-center text-sm p-1">A respiração profunda ajuda a reduzir a ansiedade ao ativar o sistema nervoso parassimpático, promovendo relaxamento e diminuindo os níveis de cortisol, o hormônio do estresse.</p>
+  
+  <iframe data-aos="fade-down" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/328697387&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/relaxarpianomusicascolecao" title="Relaxar Piano Musicas Coleção" target="_blank" style="color: #cccccc; text-decoration: none;">Relaxar Piano Musicas Coleção</a> · <a href="https://soundcloud.com/relaxarpianomusicascolecao/sets/relaxar-a-mente-m-sica-para" title="Relaxar a Mente – Música para Relaxar, Música para Dormir, Meditação e Yoga, Música New Age, Bem Estar, Serenidade, Música para Depressão e Ansiedade" target="_blank" style="color: #cccccc; text-decoration: none;">Relaxar a Mente – Música para Relaxar, Música para Dormir, Meditação e Yoga, Música New Age, Bem Estar, Serenidade, Música para Depressão e Ansiedade</a></div>
+  <cite data-aos="fade-left" class="">Creditos: Felipe Marx <a class="bg-blue-600" href="https://www.youtube.com/@FelipeMarxsb">Youtube</a> </cite>
+  
+  </div>
+  <!-- Inicio Passo 2 -->
 
 <script>
   AOS.init();
